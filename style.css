@@ -22,6 +22,7 @@ body {
   color: white;
   font-size: 5rem;
   text-align: left;
+  pointer-events: none;
   background-color: hsl(0, 0%, 20%);
 }
 
