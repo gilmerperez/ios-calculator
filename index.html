@@ -21,24 +21,24 @@
     <div id="keys">
       <!-- First Row -->
       <button onclick="clearDisplay()" class="function-btn">AC</button>
-      <button onclick="appendToDisplay('+/-')" class="function-btn">+/-</button>
-      <button onclick="appendToDisplay('%')" class="function-btn">%</button>
-      <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+      <button onclick="toggleSign()" class="function-btn">+/-</button>
+      <button onclick="percentage()" class="function-btn">%</button>
+      <button onclick="setOperation('/')" class="operator-btn">/</button>
       <!-- Second Row -->
       <button onclick="appendToDisplay('7')">7</button>
       <button onclick="appendToDisplay('8')">8</button>
       <button onclick="appendToDisplay('9')">9</button>
-      <button onclick="appendToDisplay('*')" class="operator-btn">X</button>
+      <button onclick="setOperation('*')" class="operator-btn">X</button>
       <!-- Third Row -->
       <button onclick="appendToDisplay('4')">4</button>
       <button onclick="appendToDisplay('5')">5</button>
       <button onclick="appendToDisplay('6')">6</button>
-      <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+      <button onclick="setOperation('-')" class="operator-btn">-</button>
       <!-- Fourth Row -->
       <button onclick="appendToDisplay('1')">1</button>
       <button onclick="appendToDisplay('2')">2</button>
       <button onclick="appendToDisplay('3')">3</button>
-      <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+      <button onclick="setOperation('+')" class="operator-btn">+</button>
       <!-- Fifth Row -->
       <button id="calc-toggle" class="icon-btn"><i class="fas fa-calculator"></i></button>
       <button onclick="appendToDisplay('0')">0</button>
@@ -46,7 +46,6 @@
       <button onclick="calculate()" class="operator-btn">=</button>
     </div>
   </div>
-
   <script src="script.js"></script>
 </body>
 
