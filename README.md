@@ -19,7 +19,7 @@ The project emphasizes DOM manipulation, event handling, semantic HTML, and mode
 
 The following image shows the web application's appearance and functionality:
 
-![iOS Calculator](./assets/images/iOS-Calculator.jpg)
+![iOS Calculator](./assets/images/sc.jpg)
 
 ## Instructions
 
