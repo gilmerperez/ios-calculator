@@ -20,6 +20,7 @@ function appendToDisplay(input) {
 }
 
 function clearDisplay() {
+  // Clear all variables
   operation = null;
   currentInput = "";
   display.value = "";
@@ -27,7 +28,7 @@ function clearDisplay() {
   operationDisplay = "";
 }
 
-// Toggle Positive and Negative + / -
+// Toggle positive and negative + / -
 function toggleSign() {
   if (display.value === "") {
     return;
@@ -38,7 +39,7 @@ function toggleSign() {
   }
 }
 
-// Percentage Button %
+// Percentage button %
 function percentage() {
   if (display.value === "") {
     return;
@@ -47,7 +48,7 @@ function percentage() {
   display.value = (value / 100).toString();
 }
 
-// Operator Buttons + - * /
+// Operator buttons + - * /
 function setOperation(op) {
   if (display.value === "") {
     return;
@@ -59,11 +60,11 @@ function setOperation(op) {
 
   operation = op;
   previousInput = display.value;
-  operationDisplay = `${display.value} ${op === "*" ? "×" : op} `;
+  operationDisplay = `${display.value} ${op === "*" ? "x" : op} `;
   display.value = "";
 }
 
-// Calculate Button =
+// Calculate button =
 function calculate() {
   if (operation === null || display.value === "") {
     return;
@@ -133,7 +134,7 @@ appendToDisplay = function (input) {
   originalAppend(input);
   if (!resetScreen && operation !== null) {
     operationDisplay = `${previousInput} ${
-      operation === "*" ? "×" : operation
+      operation === "*" ? "x" : operation
     } `;
     updateDisplay();
   }
